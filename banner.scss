@@ -1,0 +1,37 @@
+body{
+
+  .banner {
+    @include grid-row();
+    height: 50px;
+    background-color: #66717E;
+    max-width: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #D4D6B9;
+
+
+    h4 {
+      @include grid-column(8);
+      margin: 0;
+      height: inherit;
+      font-size: 2em;
+      font-weight: bold;
+
+    }
+    p {
+      @include grid-column(4);
+      border-left: 2px solid #383B53;
+      margin: 0;
+      height: inherit;
+      font-size: 1.7em;
+      color: #9FAFC4;
+    }
+  }
+
+
+
+
+
+
+
+
+}

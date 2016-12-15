@@ -1,0 +1,27 @@
+
+body {
+  .input {
+    @include grid-row();
+    // border: 4px solid #D1CAA1;
+    height: 70px;
+    max-width: none;
+    font-family: 'Quicksand', sans-serif;
+
+
+      input{
+      @include grid-column(8);
+      height: inherit;
+      background-color: #FCF9EF;
+
+      }
+      button{
+      @include grid-column(4);
+      height: inherit;
+      background-color: #383B53;
+      color: white;
+      font-size: 2em;
+
+
+    }
+  }
+}

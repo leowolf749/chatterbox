@@ -1,0 +1,18 @@
+body {
+
+  .chatbox{
+    @include grid-row();
+    border: 1px solid navy;
+    height: 500px;
+    background-color: #F2F6D0;
+    max-width: none;
+    font-family: 'Quicksand', sans-serif;
+
+
+    p {
+      padding: 30px;
+      margin: 30px;
+      border: 1px dotted #9FAFC4;
+    }
+  }
+}
