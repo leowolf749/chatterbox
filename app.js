@@ -6,12 +6,14 @@ function init(){
 }
 
 function comment(){
-  let lets_chat = document.querySelector('.lets_chat')
-  let item = document.querySelector('.item');
+  let lets_chat = document.querySelector('input')
+  let item = document.createElement('p');
   let parent = document.querySelector('.chatbox');
 
-  item.textContent = lets_chat.textContent;
+  item.textContent = lets_chat.value;
   parent.appendChild(item);
+
+  lets_chat.value = '';
 
 }
 
