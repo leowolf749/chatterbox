@@ -10,20 +10,34 @@ body{
 
 
     h4 {
-      @include grid-column(8);
       margin: 0;
       height: inherit;
       font-size: 2em;
       font-weight: bold;
+      text-align: center;
+      @include grid-column(12);
+      @include breakpoint(850px) {
+        @include grid-column(8);
+        text-align: justify;
+
+      };
 
     }
     p {
-      @include grid-column(4);
-      border-left: 2px solid #383B53;
       margin: 0;
       height: inherit;
-      font-size: 1.7em;
+      font-size: 1em;
       color: #9FAFC4;
+      background-color: #66717E;
+      border-top: 2px solid #383B53;
+      text-align: center;
+      @include grid-column(12);
+      @include breakpoint(850px) {
+        @include grid-column(4);
+        border-left: 2px solid #383B53;
+        border-top: none;
+      };
+
     }
   }
 

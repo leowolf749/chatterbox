@@ -24,55 +24,92 @@ body .banner {
   body .banner::after {
     clear: both; }
   body .banner h4 {
-    width: 66.66667%;
-    float: left;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
     margin: 0;
     height: inherit;
     font-size: 2em;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
     @media screen and (min-width: 40em) {
       body .banner h4 {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
     body .banner h4:last-child:not(:first-child) {
       float: right; }
+    @media screen and (min-width: 53.125em) {
+      body .banner h4 {
+        width: 66.66667%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        text-align: justify; } }
+  @media screen and (min-width: 53.125em) and (min-width: 40em) {
+    body .banner h4 {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 53.125em) {
+        body .banner h4:last-child:not(:first-child) {
+          float: right; } }
   body .banner p {
-    width: 33.33333%;
-    float: left;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    border-left: 2px solid #383B53;
     margin: 0;
     height: inherit;
-    font-size: 1.7em;
-    color: #9FAFC4; }
+    font-size: 1em;
+    color: #9FAFC4;
+    background-color: #66717E;
+    border-top: 2px solid #383B53;
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
     @media screen and (min-width: 40em) {
       body .banner p {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
     body .banner p:last-child:not(:first-child) {
       float: right; }
+    @media screen and (min-width: 53.125em) {
+      body .banner p {
+        width: 33.33333%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        border-left: 2px solid #383B53;
+        border-top: none; } }
+  @media screen and (min-width: 53.125em) and (min-width: 40em) {
+    body .banner p {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 53.125em) {
+        body .banner p:last-child:not(:first-child) {
+          float: right; } }
 
 body .chatbox {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid navy;
   height: 500px;
   background-color: #F2F6D0;
   max-width: none;
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 30px;
+  overflow-y: auto; }
   body .chatbox::before, body .chatbox::after {
     content: ' ';
     display: table; }
   body .chatbox::after {
     clear: both; }
   body .chatbox p {
-    padding: 30px;
-    margin: 30px;
-    border: 1px dotted #9FAFC4; }
+    padding: 15px;
+    margin: 5px 30px;
+    border: 2px dotted #9FAFC4;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-radius: 8px;
+    text-overflow: ellipsis; }
 
 body .input {
   max-width: 75rem;

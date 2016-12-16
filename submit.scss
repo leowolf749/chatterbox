@@ -13,6 +13,7 @@ body {
       height: inherit;
       background-color: #FCF9EF;
 
+
       }
       button{
       @include grid-column(4);
@@ -20,6 +21,8 @@ body {
       background-color: #383B53;
       color: white;
       font-size: 2em;
+
+
 
 
     }
