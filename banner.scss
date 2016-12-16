@@ -39,6 +39,17 @@ body{
       };
 
     }
+
+    #username {
+      border: none;
+      background-color: #66717E;
+      color: #D4D6B9;
+      height: 50px;
+    }
+    #username:active{
+      border: none;
+      background-color: #66717E;
+    }
   }
 
 

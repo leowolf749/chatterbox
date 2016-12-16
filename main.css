@@ -86,6 +86,14 @@ body .banner {
     @media screen and (min-width: 53.125em) {
         body .banner p:last-child:not(:first-child) {
           float: right; } }
+  body .banner #username {
+    border: none;
+    background-color: #66717E;
+    color: #D4D6B9;
+    height: 50px; }
+  body .banner #username:active {
+    border: none;
+    background-color: #66717E; }
 
 body .chatbox {
   max-width: 75rem;
@@ -96,20 +104,32 @@ body .chatbox {
   max-width: none;
   font-family: 'Quicksand', sans-serif;
   padding-top: 30px;
-  overflow-y: auto; }
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  width: 100%; }
   body .chatbox::before, body .chatbox::after {
     content: ' ';
     display: table; }
   body .chatbox::after {
     clear: both; }
-  body .chatbox p {
+  body .chatbox section {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 15px;
     margin: 5px 30px;
     border: 2px dotted #9FAFC4;
     font-size: 1.2em;
     font-weight: bolder;
-    border-radius: 8px;
-    text-overflow: ellipsis; }
+    border-radius: 8px; }
+    body .chatbox section::before, body .chatbox section::after {
+      content: ' ';
+      display: table; }
+    body .chatbox section::after {
+      clear: both; }
+    body .chatbox section h3 {
+      font-size: .8em;
+      color: #66717E; }
 
 body .input {
   max-width: 75rem;
