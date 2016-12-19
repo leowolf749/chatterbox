@@ -71,7 +71,6 @@ function sendMessage(){
 
   console.log(body);
   request.send(body);
-
 }
 
 
